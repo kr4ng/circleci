@@ -13,9 +13,9 @@ api = restful.Api(app)
 class merge(restful.Resource):
     def get(self, ID):
         #Establish Connection to OpenTable Marketo Endpoint
-        client = suds_marketo.Client(soap_endpoint='https://970-WBY-466.mktoapi.com/soap/mktows/2_3',
-                                     user_id='opentable1_62824687530E8A604131D1',
-                                     encryption_key='5335137655137532553300EE88AA661244113492BE69')
+        client = suds_marketo.Client(soap_endpoint='YOUR KEY HERE',
+                                     user_id='Your key here',
+                                     encryption_key='Your key here')
 
         NewContactFromSFDC = str(ID)
         #get the leads from Marketo
